@@ -76,7 +76,7 @@ class User:
     # we assign them accordingly
         self.name = name
         self.email = email_address
-    	# the account balance is set to $0
+    # the account balance is set to $0
         self.account_balance = 0
 guido = User("Guido Van Rossum", "guido@python.com")
 monty = User("Monty Python", "monty@python.com")
@@ -341,14 +341,6 @@ class BankAccount:
         self.balance = balance
 
 #Inheritance (SUPER)
-
-#Child
-class RetirementAccount(BankAccount):
-    def withdraw(self, amount, is_early):
-        if is_early:
-    	    amount = amount * 1.10
-        super().withdraw(amount)
-        return self
 
 #Parent        
 class BankAccount:
